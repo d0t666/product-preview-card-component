@@ -35,15 +35,32 @@
                     alt=""
                     class="product-preview-card_thumb"
                 /> -->
-                <img
+                <!-- <img
                     src="./images/image-product-desktop.jpg"
                     alt=""
                     class="product-preview-card_thumb"
+                    sizes="(max-width: 600px) 100vw, 1440px"
                     srcset="
-                        ./images/image-product-mobile.jpg   475w,
+                        ./images/image-product-mobile.jpg   600w,
                         ./images/image-product-desktop.jpg 1440w
                     "
-                />
+                /> -->
+
+                <picture class="image-container">
+                    <source
+                        media="(max-width: 375px)"
+                        srcset="images/image-product-mobile.jpg"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="images/image-product-desktop.jpg"
+                    />
+                    <img
+                        src="images/image-product-mobile.jpg"
+                        alt="logotipo_Gabrielle-chanel"
+                        class="product-preview-card_thumb"
+                    />
+                </picture>
 
                 <div class="product-preview-card__content">
                     <span class="product-preview-card__tag">Perfume</span>

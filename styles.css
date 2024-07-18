@@ -77,8 +77,9 @@ h6 {
 }
 
 .product-preview-card_thumb {
-    width: 50%;
+    /* width: 50%; */
     object-fit: cover;
+    height: min(400px, 100%);
 }
 .product-preview-card__content {
     display: flex;
